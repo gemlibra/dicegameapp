@@ -1,0 +1,20 @@
+{
+    "name": "DiceGameBoard",
+    "short_name": "DiceGameBoard",
+    "icons": [
+        {
+            "src": "dicecube-192x192.jfif",
+            "sizes": "192x192",
+            "type": "image/jfif"
+        },
+        {
+            "src": "dicecube-512x512.jfif",
+            "sizes": "512x512",
+            "type": "image/jfif"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#80deea",
+    "theme_color": "#e0f7fa"
+}

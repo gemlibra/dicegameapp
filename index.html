@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game Board</title>
+    <!--<link rel="stylesheet" href="../assets/css/styles.css">-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <form id="dice-game-form" onsubmit="return false;">
+        
+        <div class="section section-header">
+            <h1 class="main-heading">DiceGameBoard</h1>
+            
+            <div class="diceimg">
+             <img src="icon/dicecubehdrimg.jfif" id="diceimg"/>   
+                <!--<i class="fa-solid fa-dice-five animated-dice-icon"></i>-->
+            </div>
+        </div>
+
+ 
+
+        <div class="section section-config">
+            <div class="input-group dice-type-group">
+                <label for="dice-type">Dice Type<br></label>
+                <select id="dice-type" name="dice-type">
+                    <option value="d4">d4</option>
+                    <option value="d6" selected>d6</option>
+                    <option value="d8">d8</option>
+                    <option value="d10">d10</option>
+                    <option value="d12">d12</option>
+                    <option value="d20">d20</option>
+                    <option value="d100">d100</option>
+                </select>
+            </div>
+            
+            <div class="input-group dice-count-group">
+                <label for="dice-count">Dice Count<br></label>
+                <input type="number" id="dice-count" name="dice-count" min="1" value="3">
+            </div>
+        </div>
+
+ 
+
+        <div class="section section-actions">
+            <div class="button-container">
+                <button type="button" id="btn-roll" class="btn">Roll Dice</button>
+                <button type="button" id="btn-clear" class="btn">Clear</button>
+            </div>
+        </div>
+
+
+        <div class="section section-output">
+            <div class="output-container">
+                <p id="rolls-output" class="dynamic-display"></p>
+                <p id="total-output" class="dynamic-display"></p>
+            </div>
+        </div>
+        
+        <hr>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 J3zglobalitsolutions.com. All rights reserved.</p>
+    </footer>
+
+    </form>
+
+    <!--<script src="../assets/js/script.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
