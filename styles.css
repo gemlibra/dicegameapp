@@ -58,9 +58,18 @@ hr {
 }
 
 /* Specific override for Section 1 to force heading and icon inline */
-.section-header {
+.section-header {    
     flex-direction: row;
-    gap: 15px;
+    gap: 3px;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;     /* Legacy support */
+    overflow-wrap: break-word; /* Prevents overflow by breaking long words if necessary */
+    
+    /* Optional: Dynamic font sizing */
+    font-size: clamp(1.5rem, 5vw, 2.5rem); 
+    
+    
 }
 
 /* Remove margin from the final section */
