@@ -60,6 +60,7 @@ hr {
 /* Specific override for Section 1 to force heading and icon inline */
 .section-header {
     flex-direction: row;
+    object-fit: scale-down;
     gap: 15px;
 }
 
